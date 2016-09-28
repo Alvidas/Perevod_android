@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="0.05"
+        android:textIsSelectable="false"
+        android:textAlignment="inherit"
+        android:hint="Исходная СС" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_weight="0.05"
+        android:hint="Число" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_weight="0.05"
+        android:hint="Новая СС" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="Перевод"
+        android:id="@+id/button"
+        android:allowUndo="false"
+        android:onClick="ClickButton"
+        android:background="#5684ae" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:autoText="false"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:layout_weight="0.10"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
